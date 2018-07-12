@@ -21,7 +21,7 @@ function start() {
     tl.set('.frame1', { opacity: 1 });
     tl.from('.t1a', .4, { x: -_commonJsCommon.size.w }, .1);
     tl.from('.t1b', .4, { x: -_commonJsCommon.size.w }, '+=.8');
-    tl.from('.t1c', .4, { x: -_commonJsCommon.size.w }, '+=1.3');
+    tl.from('.t1c', .4, { x: -_commonJsCommon.size.w }, '+=1');
 
     tl.to('.frame1', .3, { opacity: 0 }, '+=1.9');
 
