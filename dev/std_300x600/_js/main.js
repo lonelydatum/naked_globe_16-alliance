@@ -5,11 +5,11 @@ import {size} from '../../_common/js/common'
 function start(){
     const tl = new TimelineMax()
     tl.set('.frame1', {opacity:1})
-    tl.from('.t1a', .4, {x:-size.w}, .3)
+    tl.from('.t1a', .4, {x:-size.w}, .1)
     tl.from('.t1b', .4, {x:-size.w}, '+=.8')
-    tl.from('.t1c', .4, {x:-size.w}, '+=.8')
+    tl.from('.t1c', .4, {x:-size.w}, '+=1.3')
 
-    tl.to('.frame1', .3, {opacity:0}, '+=.8')
+    tl.to('.frame1', .3, {opacity:0}, '+=1.3')
 
     tl.add('f2')
     tl.to('.frame2', .3,  {opacity:1}, 'f2')
@@ -31,9 +31,9 @@ function start(){
 
     tl.from("#t2a", .3, {opacity:0}, "f2+=.5")
     tl.from("#t2b", .3, {opacity:0}, 'f2+=1')
-    tl.from("#t2c", .3, {opacity:0}, 'f2+=2')
+    tl.from("#t2c", .3, {opacity:0}, 'f2+=1.5')
 
-    tl.to(".frame2", .3, {opacity:0}, 'f2+=3')
+    tl.to(".frame2", .3, {opacity:0}, 'f2+=5')
 
     tl.set('.frame3', {opacity:1})
     tl.from(".logo", .3, {opacity:0})
