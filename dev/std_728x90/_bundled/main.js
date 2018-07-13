@@ -27,7 +27,7 @@ function start() {
     tl.to('.t1a', .4, { y: _commonJsCommonJs.size.h }, '+=1');
 
     tl.from('.t1b', .4, { y: -_commonJsCommonJs.size.h });
-    tl.to('.t1b', .4, { y: _commonJsCommonJs.size.h }, '+=1');
+    tl.to('.t1b', .4, { y: _commonJsCommonJs.size.h }, '+=1.3');
 
     tl.from('.t1c', .4, { y: -_commonJsCommonJs.size.h });
     tl.to('.frame1', .3, { opacity: 0 }, '+=1.3');
