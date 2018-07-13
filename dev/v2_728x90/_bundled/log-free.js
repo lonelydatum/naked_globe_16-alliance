@@ -20,10 +20,10 @@ var _commonJsCommonJs = require('../../_common/js/common.js');
 
 function start() {
     var tl = new TimelineMax();
-    TweenLite.to('.bg', 1, { y: -150, ease: Linear.easeNone });
+    TweenLite.to('.bg', 2.5, { y: -150, ease: Linear.easeNone });
     tl.set('.frame1', { opacity: 1 });
 
-    tl.from('.t1b', .2, { opacity: 0 }, "+=1.3");
+    tl.from('.t1b', .2, { opacity: 0 }, "+=2.5");
     // tl.to('.t1b', .4, {y:size.h}, '+=1.3')
 
     tl.to('.frame1', .3, { opacity: 0 }, '+=1.7');
