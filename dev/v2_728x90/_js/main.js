@@ -5,16 +5,14 @@ import {size} from '../../_common/js/common.js'
 
 function start(){
     const tl = new TimelineMax()
-    TweenLite.to('.bg', 4, {y:-150, ease:Linear.easeNone})
+    TweenLite.to('.bg', 1, {y:-150, ease:Linear.easeNone})
     tl.set('.frame1', {opacity:1})
 
-    // tl.from('.t1a', .4, {y:-size.h}, .1)
-    // tl.to('.t1a', .4, {y:size.h}, '+=1')
-
+    
     tl.from('.t1b', .2, {opacity:0}, "+=1.3")
     // tl.to('.t1b', .4, {y:size.h}, '+=1.3')
 
-    tl.from('.t1c', .2, {opacity:0}, "+=1.3")
+    
     tl.to('.frame1', .3, {opacity:0}, '+=1.7')
     
     tl.add('f2')

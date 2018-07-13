@@ -21,10 +21,12 @@ Object.defineProperty(exports, '__esModule', {
 var _common = require('./common');
 
 function start() {
+    var delay = arguments.length <= 0 || arguments[0] === undefined ? 0 : arguments[0];
+
     var tl = new TimelineMax();
     tl.set('.frame1', { opacity: 1 });
 
-    tl.from('.t1a', .4, { x: -_common.size.w }, .3);
+    tl.from('.t1a', .4, { x: -_common.size.w }, '+=' + delay);
     tl.from('.t1b', .4, { x: -_common.size.w }, '+=.8');
 
     tl.to('.frame1', .3, { opacity: 0 }, '+=1.9');

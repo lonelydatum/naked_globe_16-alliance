@@ -1,10 +1,10 @@
 import {size} from './common'
 
-function start(){
+function start(delay=0){
     const tl = new TimelineMax()
     tl.set('.frame1', {opacity:1})
     
-    tl.from('.t1a', .4, {x:-size.w}, .3)
+    tl.from('.t1a', .4, {x:-size.w}, `+=${delay}`)
     tl.from('.t1b', .4, {x:-size.w}, '+=.8')
     
     tl.to('.frame1', .3, {opacity:0}, '+=1.9')
