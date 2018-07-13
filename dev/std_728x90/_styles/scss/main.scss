@@ -1,0 +1,40 @@
+@import '../../../_common/styles/common.scss';
+
+$w:300;
+
+.frame1 {
+	// opacity: 1;
+
+	.bg{
+		@include pos-scale(0, -360, .5);
+		// @include pos-scale(0, -97, .5);
+		
+	}
+}
+
+.frame2 {
+	// opacity: 1;
+
+	
+
+
+
+	#bg-white{ 
+		width: 511px;
+		height: 100%;
+		@include pos(108, 0);
+		background-color:white;		
+	}
+
+}
+
+.frame3 {
+	// opacity: 1;
+}
+
+#banner{	
+	width: 728px;
+	height: 90px;
+	// overflow: visible;
+}
+
