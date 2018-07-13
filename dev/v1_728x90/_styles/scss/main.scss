@@ -1,0 +1,53 @@
+@import '../../../_common/styles/common.scss';
+
+$w:300;
+
+.frame1 {
+	// opacity: 1;
+
+	.bg{
+		@include pos-scale(0, -360, .5);
+		// @include pos-scale(0, -97, .5);
+		
+	}
+}
+
+.frame2 {
+	// opacity: 1;
+
+	#bg-grey{ 
+		@include pos(0, 0);		
+		width: 100%;
+		height: 100%;
+		background-color: #ebebeb;
+	}
+
+	// #icon-1{ @include pos(-486, 14); }
+	// #icon-2{ @include pos(-388, 43); }
+
+	#icon-1{ @include pos(-550, 14); }
+	#icon-2{ @include pos(0, 43); }
+	
+	.icon{
+		opacity: .5;
+	}
+
+	#bg-white{ 
+		width: 511px;
+		height: 100%;
+		@include pos(108, 0);
+		background-color:white;		
+	}
+
+}
+
+.frame3 {
+	// opacity: 1;
+}
+
+#banner{	
+	width: 728px;
+	height: 90px;
+	// overflow: visible;
+}
+

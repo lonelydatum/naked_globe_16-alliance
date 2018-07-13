@@ -1,0 +1,55 @@
+@import '../../../_common/styles/common.scss';
+
+$w:300;
+
+.frame1 {
+	// opacity: 1;
+}
+
+.frame2 {
+	// opacity: 1;
+	#icon-1{ @include pos(-59, 14); }
+	#icon-2{ @include pos(-86, 41); }
+	#icon-3{ @include pos(-68, 188); }
+	#icon-4{ @include pos(-80, 222); }
+	
+	img.icon-right {
+		transform: translate(51%, -100%) scale(.5);
+	}
+
+	.icon{
+		width: 999px;
+	}
+	.icon img{
+		position: relative;
+		display: inline;
+		// @include pos-scale($w+70, 0, .5);		
+	}
+
+	#bg-grey{ 
+		@include pos(0, 0);		
+		width: 100%;
+		height: 100%;
+		background-color: #ebebeb;
+		
+	}
+
+	#bg-white{ 
+		width: 100%;
+		height: 111px;
+		@include pos(0, 70);
+		background-color:white;
+	}
+
+}
+
+.frame3 {
+	// opacity: 1;
+}
+
+#banner{	
+	width: 300px;
+	height: 250px;
+	// overflow: visible;
+}
+
