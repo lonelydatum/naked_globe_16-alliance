@@ -2,27 +2,17 @@
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
-  value: true
+    value: true
 });
-var banner = document.getElementById('banner');
-var size = { w: banner.offsetWidth, h: banner.offsetHeight };
 
-TweenLite.defaultEase = Power2.easeInOut;
-
-exports.size = size;
-
-},{}],2:[function(require,module,exports){
-'use strict';
-
-var _commonJsCommon = require('../../_common/js/common');
+var _common = require('./common');
 
 function start() {
     var tl = new TimelineMax();
     tl.set('.frame1', { opacity: 1 });
-    tl.from('.t1a', .4, { x: -_commonJsCommon.size.w }, .1);
-    tl.from('.t1b', .4, { x: -_commonJsCommon.size.w }, '+=.8');
-    tl.from('.t1c', .4, { x: -_commonJsCommon.size.w }, '+=1');
-
+    tl.from('.t1a', .4, { x: -_common.size.w }, .1);
+    tl.from('.t1b', .4, { x: -_common.size.w }, '+=.8');
+    tl.from('.t1c', .4, { x: -_common.size.w }, '+=1');
     tl.to('.frame1', .3, { opacity: 0 }, '+=1.9');
 
     tl.add('f2');
@@ -30,16 +20,12 @@ function start() {
 
     var Icons = new TimelineMax();
     var iconTime = 30;
-    Icons.from('#icon-1', iconTime, { x: -_commonJsCommon.size.w, ease: Linear.easeNone }, 0);
-    Icons.to('#icon-2', iconTime, { x: -_commonJsCommon.size.w, ease: Linear.easeNone }, 0);
-    Icons.from('#icon-3', iconTime, { x: -_commonJsCommon.size.w, ease: Linear.easeNone }, 0);
-    Icons.to('#icon-4', iconTime, { x: -_commonJsCommon.size.w, ease: Linear.easeNone }, 0);
-    Icons.from('#icon-5', iconTime, { x: -_commonJsCommon.size.w, ease: Linear.easeNone }, 0);
-    Icons.to('#icon-6', iconTime, { x: -_commonJsCommon.size.w, ease: Linear.easeNone }, 0);
-
-    // tl.add(Icons, 'f2')
-
-    // tl.add('f2b', 'f2+=.2')
+    Icons.from('#icon-1', iconTime, { x: -_common.size.w, ease: Linear.easeNone }, 0);
+    Icons.to('#icon-2', iconTime, { x: -_common.size.w, ease: Linear.easeNone }, 0);
+    Icons.from('#icon-3', iconTime, { x: -_common.size.w, ease: Linear.easeNone }, 0);
+    Icons.to('#icon-4', iconTime, { x: -_common.size.w, ease: Linear.easeNone }, 0);
+    Icons.from('#icon-5', iconTime, { x: -_common.size.w, ease: Linear.easeNone }, 0);
+    Icons.to('#icon-6', iconTime, { x: -_common.size.w, ease: Linear.easeNone }, 0);
 
     tl.from("#t2a", .3, { opacity: 0 }, "f2+=.5");
     tl.from("#t2b", .3, { opacity: 0 }, 'f2+=1.5');
@@ -57,11 +43,34 @@ function start() {
     // tl.gotoAndPlay('f2')
 }
 
-start();
+exports['default'] = start;
+module.exports = exports['default'];
 
-module.exports = {};
+},{"./common":2}],2:[function(require,module,exports){
+'use strict';
 
-},{"../../_common/js/common":1}]},{},[2])
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+var banner = document.getElementById('banner');
+var size = { w: banner.offsetWidth, h: banner.offsetHeight };
+
+TweenLite.defaultEase = Power2.easeInOut;
+
+exports.size = size;
+
+},{}],3:[function(require,module,exports){
+'use strict';
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _commonJsAliJs = require('../../_common/js/ali.js');
+
+var _commonJsAliJs2 = _interopRequireDefault(_commonJsAliJs);
+
+(0, _commonJsAliJs2['default'])();
+
+},{"../../_common/js/ali.js":1}]},{},[3])
 
 
 //# sourceMappingURL=main.js.map
